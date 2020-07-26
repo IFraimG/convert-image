@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+</head>
+<body>
+  <div class="image__wrapper">
+    <label for="inputImage">Вставьте сюда ваше изображение</label>
+      <input 
+        class="image__input" 
+        type="file" 
+        id="inputImage" 
+      />
+      <h2 class="image__title" id="imageTrigger">Выберите формат преобразования</h2>
+      <div class="image__list hide">
+        <p class="image__format">.png</p>
+        <p class="image__format">.jpg</p>
+        <p class="image__format">.gif</p>
+        <p class="image__format">.webp</p>
+      </div>
+    <div class="image__buttons">
+      <button class="image__btn image__download hide" id="buttonSend">Отправить</button>
+    </div>
+  </div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
